@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['A', 'B', 'C']
+        var r = arr.filter(function(element,index,self){
+            console.log(element);
+            console.log(index);
+            console.log(self);
+            return true
+        })
+    </script>
+</body>
+</html>

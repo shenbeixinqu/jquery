@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            //appendTo 将元素添加到指定元素的最后
+            var btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function(){
+                /*
+
+                */
+                // 接受一个jquery对象
+                // $("p").appendTo($("div"))
+                // 接受一个dom对象
+                var divs = document.querySelectorAll("div");
+                $("p").appendTo(divs)
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <button>调用appendTo</button>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <div class="item">
+        <li>1我是第1个li</li>
+        <li>1我是第2个li</li>
+        <li>1我是第3个li</li>
+    </div>
+    <div class="item">
+        <li>1我是第1个li</li>
+        <li>1我是第2个li</li>
+        <li>1我是第3个li</li>
+    </div>
+</body>
+
+</html>

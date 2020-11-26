@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            var btn = document.getElementsByTagName("button")[0]
+            console.log(btn)
+            btn.onclick = function(){
+               var $div = $("div");
+               console.log($div.html())  // <p>我是段落1</p>
+               console.log($div.text())  //  我是段落
+            //    $div.html("<div><span>我是span</span></div>")  // 我是span
+               $div.text("<div><span>我是span</span></div>")  // <div><span>我是span</span></div>
+            }
+        })
+    </script>
+</head>
+<body>
+    <button>调用text</button>
+    <div>
+        我是div
+        <p>我是段落1</p>
+    </div>
+    <div class="box">
+        我是div2
+        <p>我是段落2</p>
+    </div>
+</body>
+</html>
