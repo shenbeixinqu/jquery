@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            var btn = document.getElementsByTagName("button")[0]
+            btn.onclick = function(){
+                $("p").prepend($(".item"))
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <button>调用prepend</button>
+    <p>我是段落</p>
+    <div class="item">
+        <li>1我是第1个li</li>
+        <li>1我是第2个li</li>
+        <li>1我是第3个li</li>
+    </div>
+</body>
+
+</html>

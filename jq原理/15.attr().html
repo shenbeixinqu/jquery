@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            /*
+                attr()设置或者获取元素的属性节点值
+            */
+            // 传递一个参数,返回第一个元素属性节点的值
+            // var attr_val = $("span").attr("class")
+            // console.log(attr_val)
+
+            // 传递两个参数,代表设置所有元素属性节点的值
+            console.log($("span").attr("class", "abc"))
+
+            // 传递一个对象,代表批量设置所有属性节点的值
+            $("span").attr(
+                {
+                    "class":"123",
+                    "name":"444"
+                }
+            )
+        })
+    </script>
+</head>
+<body>
+    <span class="span1" name="it666"></span>
+    <span class="span2" name="lnj"></span>
+</body>
+</html>

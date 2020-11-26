@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function (){
+            /*
+                元素.innerBefore.指定元素  将元素添加到指定元素前面的外面
+            */
+            var btn = document.getElementsByTagName("button")[0]
+            btn.onclick = function(){
+                $("p").insertBefore($(".item"))
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <button>调用insertBefore</button>
+    <div class="item">
+        <p>我是段落</p>
+        <li>1我是第1个li</li>
+        <li>1我是第2个li</li>
+        <li>1我是第3个li</li>
+    </div>
+</body>
+
+</html>

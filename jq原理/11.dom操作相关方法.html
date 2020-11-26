@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            /*
+                指定元素.append.元素  ==> 将元素添加到指定元素内
+            
+            */
+
+            // 可以接受字符串 jquery对象  dom对象
+            var btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function(){
+                $(".item").append($("p"))
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <button>调用append </button>
+    <p>我是段落</p>
+    <p>我是段落</p>
+    <div class="item">
+        <li>1我是第1个li</li>
+        <li>1我是第2个li</li>
+        <li>1我是第3个li</li>
+    </div>
+    <div class="item">
+        <li>1我是第1个li</li>
+        <li>1我是第2个li</li>
+        <li>1我是第3个li</li>
+    </div>
+</body>
+
+</html>

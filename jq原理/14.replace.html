@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            /*
+                元素.replace.指定元素  替换所有指定元素
+        
+            */
+            var btn = document.getElementsByTagName("button")[0];
+            btn.onclick = function(){
+                $("p").replaceAll("li")
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <button>调用replaceAll</button>
+    <p>我是段落</p>
+    <div class="item">
+        <li>1我是li</li>
+        <li>1我是li</li>
+        <li>1我是li</li>
+    </div>
+</body>
+
+</html>

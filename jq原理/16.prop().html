@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            /*
+                prop() 设置或者获取元素的属性值
+                attr 和 prop 属性的区别
+                prop  对于HTML元素本身就带有的固有属性   attr  对于HTML元素我们自定义的加在标签中的属性
+            */
+            console.log($("span").prop("abc","lnj"))
+
+            // 传递一个参数, 返回第一个元素属性节点的值
+            console.log($("span").prop("abc"));
+        
+        })
+    </script>
+</head>
+<body>
+    <span class="span1" name="it666"></span>
+    <span class="span2" name="lnj"></span>
+</body>
+</html>
