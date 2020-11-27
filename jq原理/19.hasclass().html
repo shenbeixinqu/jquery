@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            /*
+                判断元素中是否包含指定类
+            */
+
+            // 传递参数  只要调用者其中一个包含指定类 就返回true 否则返回false
+            console.log($("div").hasClass("aabb"))
+
+            // 没有参数 返回false
+            // console.log($("div").hasClass());
+            
+            
+
+        })
+    </script>
+</head>
+<body>
+    <div class="aabb cc dd"></div>
+    <div class="aabb bb"></div>
+</body>
+</html>

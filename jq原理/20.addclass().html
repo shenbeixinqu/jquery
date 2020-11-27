@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+
+        $(function(){
+            /*
+                addclass()  给元素添加一个或多个指定的类
+            */
+
+            // 传递参数. 如果元素中没有指定类就添加, 有就不添加
+            // 会返回this方便链式编程
+            // console.log($("div").addClass("abc"));
+            console.log($("div").addClass("abc def"));
+
+            // 没有参数传递. 
+        })
+    </script>
+</head>
+<body>
+    <div class="aabb abc"></div>
+    <div class="aabb"></div>
+</body>
+</html>
