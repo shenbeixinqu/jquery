@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            /*
+                attr (name,pro,key value,fn)
+                获取或者设置属性节点的值
+                传递一个参数  代表获取属性节点的值
+                传递两个参数  代表设置属性节点的值
+
+                注意点  
+                如果是获取:无论找到多少个元素, 都只会返回第一个元素指定的属性节点的值
+                如果是设置:找到多少个元素就会设置多少个元素
+                如果是设置: 如果设置的属性节点不存在, 那么系统会自动新增
+
+            */
+            // console.log($("span").attr("class"));
+            console.log($("span").attr("class", "box"));
+        })
+    </script>
+</head>
+<body>
+    <span class="span1" name="it666"></span>
+    <span class="span2" name="lnj"></span>
+    
+</body>
+</html>
